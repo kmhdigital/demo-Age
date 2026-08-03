@@ -1,1 +1,85 @@
+/* ==========================================================================
+   Ledessertmx - Hoja de Estilos CSS Independiente
+   ========================================================================== */
 
+/* Variables Raíz / Tema */
+:root {
+    --brand-50: #f0f7f7;
+    --brand-100: #dbecec;
+    --brand-200: #b7d9db;
+    --brand-500: #569b9e;
+    --brand-600: #468386;
+    --brand-700: #3a6c6f;
+    --brand-800: #32575a;
+    --brand-900: #2d494c;
+    --brand-main: #569b9e;
+    --brand-dark: #3a6c6f;
+    --bg-light: #f8faf9;
+}
+
+/* Configuraciones Base */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-light);
+    color: #4a5568;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Tipografías Específicas */
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-sans {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Utilidades y Clases Personalizadas */
+.canva-card-shadow {
+    box-shadow: 0 10px 25px -5px rgba(86, 155, 158, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+}
+
+.input-canva {
+    background-color: #fcfdfe;
+    border: 1px solid #e2e8f0;
+    border-radius: 1.25rem;
+    padding: 0.875rem 1.25rem;
+    font-size: 0.925rem;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.input-canva:focus {
+    outline: none;
+    border-color: var(--brand-500);
+    box-shadow: 0 0 0 3px rgba(86, 155, 158, 0.15);
+    background-color: #ffffff;
+}
+
+.admin-section-card {
+    background-color: #ffffff;
+    border-radius: 1.75rem;
+    border: 1px solid #edf2f7;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px -2px rgba(86, 155, 158, 0.05);
+}
+
+#toast-container {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 100;
+}
+
+/* Selección de Texto */
+::selection {
+    background-color: var(--brand-100);
+    color: var(--brand-900);
+}
