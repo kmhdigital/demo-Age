@@ -21,12 +21,12 @@ const CONFIG = {
     hero: "img/hero.jpg",
 
     galeria: [
-        "img/Pastel1.jpg",
-        "img/Pastel2.jpg",
-        "img/Pastel3.jpg",
-        "img/Pastel4.jpg",
-        "img/Pastel5.jpg",
-        "img/Pastel6.jpg"
+        "img/Pastel.jpg",
+        "img/Paste2.jpg",
+        "img/Paste3.jpg",
+        "img/Paste4.jpg",
+        "img/Paste5.jpg",
+        "img/Paste6.jpg"
     ]
 };
 window.addEventListener("DOMContentLoaded", ()=>{
@@ -40,5 +40,9 @@ window.addEventListener("DOMContentLoaded", ()=>{
 galeria:[
  "img/Pastel1.jpg",
  "img/Pastel2.jpg",
+ "img/Pastel3.jpg",
+ "img/Paste4.jpg",
+ "img/Paste5.jpg",
+ "img/Paste6.jpg",
  ...
 ]
