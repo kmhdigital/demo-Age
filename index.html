@@ -1170,15 +1170,12 @@ background-repeat:no-repeat;">
             console.log(waNumber);
             console.log(waUrl);
 
-            closeReviewModal();
-            document.getElementById('orderForm').reset();
-            toggleDeliveryFields();
-            showToast('¡Pedido registrado! Redirigiendo a WhatsApp...', 'success');
+           closeReviewModal();
+document.getElementById('orderForm').reset();
+toggleDeliveryFields();
+showToast('¡Pedido registrado! Redirigiendo a WhatsApp...', 'success');
 
-            setTimeout(() => {
-                window.open(waUrl, '_blank');
-            }, 600);
-        }
+window.location.href = waUrl;
 
         // ADMIN LOGIN & MODAL CONTROLS
         function openAdminModal() {
