@@ -1167,6 +1167,8 @@ background-repeat:no-repeat;">
 
             const waNumber = state.businessPhone.replace(/\D/g, '');
             const waUrl = `https://wa.me/${waNumber}?text=${msg}`;
+            console.log(waNumber);
+            console.log(waUrl);
 
             closeReviewModal();
             document.getElementById('orderForm').reset();
