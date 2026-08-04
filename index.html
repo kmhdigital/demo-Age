@@ -1167,15 +1167,17 @@ background-repeat:no-repeat;">
 
             const waNumber = state.businessPhone.replace(/\D/g, '');
             const waUrl = `https://wa.me/${waNumber}?text=${msg}`;
-            console.log(waNumber);
-            console.log(waUrl);
+            
 
            closeReviewModal();
-document.getElementById('orderForm').reset();
-toggleDeliveryFields();
-showToast('¡Pedido registrado! Redirigiendo a WhatsApp...', 'success');
+            document.getElementById('orderForm').reset();
+            toggleDeliveryFields();
+            showToast('¡Pedido registrado! Redirigiendo a WhatsApp...', 'success');
 
-window.location.href = waUrl;
+            setTimeout(() => {
+                window.open(waUrl, '_blank');
+            }, 600);
+        }
 
         // ADMIN LOGIN & MODAL CONTROLS
         function openAdminModal() {
